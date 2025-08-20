@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Technology</title>
+  <style>
+    table,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 10px;
+      background: grey;
+    }
+
+    table {
+      width: 90%
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #main-img {
+      margin-bottom: 100px;
+    }
+
+    div.main {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    div {
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    #toc {
+      margin-bottom: 80px;
+    }
+
+
+    div.content {
+      flex-direction: row;
+      gap: 50px;
+      width: 80%;
+    }
+
+    div.content p {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h1 id="top"><u>WEB TECHNOLOGY</u></h1>
+    <img height="500px" id="main-img"
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.monocubed.com%2Fwp-content%2Fuploads%2F2022%2F08%2FBest-Web-Technologies-List.jpg&f=1&nofb=1&ipt=c93baec2f6f808dbca598316d3449d11c5d714225f0c888d9bc4170fe3106363"
+      alt="">
+
+    <h3>TABLE OF CONTENTS</h3>
+    <p>[Click on the topic you want to learn]</p>
+    <table border="1" id="toc">
+      <tr>
+        <td><a href="#client">Client/Server</a></td>
+        <td><a href="#components">Components of Web Application</a></td>
+      </tr>
+      <tr>
+        <td><a href="#types">Types of Web Content</a></td>
+        <td><a href="#http-request">HTTP-HTTP request</a></td>
+      </tr>
+      <tr>
+        <td><a href="#dynamic">Dynamic Web Pages</a></td>
+        <td><a href="#server">Application Servers</a></td>
+      </tr>
+      <tr>
+        <td colspan="2"><a href="#security">Web Security</a></td>
+      </tr>
+    </table>
+
+    <div>
+      <h3 id="client">CLIENT/SERVER</h3>
+      <div class="content">
+        <img height="200px"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/250px-Client-server-model.svg.png">
+        <p>The client–server model is a distributed application structure that partitions tasks or workloads between the
+          providers of a resource or service, called servers, and service requesters, called clients.[1] Often clients
+          and servers communicate over a computer network on separate hardware, but both client and server may be on the
+          same device. A server host runs one or more server programs, which share their resources with clients. A
+          client usually does not share its computing resources, but it requests content or service from a server and
+          may share its own content as part of the request. Clients, therefore, initiate communication sessions with
+          servers, which await incoming requests. Examples of computer applications that use the client–server model are
+          email, network printing, and the World Wide Web.
+
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3 id="components">Components of Web Application</h3>
+      <div class="content">
+        <p>A web application (or web app) is application software that is created with web technologies and runs via a
+          web browser.[1][2] Web applications emerged during the late 1990s and allowed for the server to dynamically
+          build a response to the request, in contrast to static web pages.[3]
+
+          Web applications are commonly distributed via a web server. There are several different tier systems that web
+          applications use to communicate between the web browsers, the client interface, and server data. Each system
+          has its own uses as they function in different ways. However, there are many security risks that developers
+          must be aware of during development; proper measures to protect user data are vital.
+
+        </p>
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ZB3tOm0WXLSZIi4ZE2sHKAHaGm%3Fpid%3DApi&f=1&ipt=2a8e9ebb61c6427fc8344df73447e4ef0ca039e55b803a5ce6d6073b83eb194c"
+          alt="" height="200px">
+      </div>
+    </div>
+
+    <div>
+      <h3 id="types">Types of Web Content</h3>
+      <div class="content">
+        <img height="200px"
+          src="https://tse4.mm.bing.net/th%2Fid%2FOIP.b82KDVwl4Coquubng8BiFgHaEY%3Fpid%3DApi&f=1&ipt=869d00ed25cb70e2ae224bb253562b362260756980fbe9c46cfd6aa1c6df999b"
+          alt="">
+        <p>Web content is the text, visual or audio content that is made available online and user encountered as part
+          of the online usage and experience on websites. It may include text, images, sounds and audio, online videos,
+          among other items placed within web pages.
+
+          In the book Information Architecture for the World Wide Web, Lou Rosenfeld and Peter Morville wrote, "We
+          define content broadly as 'the stuff in your website.' Web content may include webpage document pages,
+          information, software data and applications, e-services, images, audio and video files, personal Web pages,
+          archived e-mail messages stored on email servers, and more. And we include future web content as well as
+          present web content roadmap."[1]: 219 
+        </p>
+      </div>
+    </div>
+
+
+    <div>
+      <h3 id="http-request">HTTP-HTTP Request</h3>
+      <div class="content">
+        <p>HTTP functions as a request–response protocol in the client–server model. A web browser, for example, may be
+          the client whereas a process, named web server, running on a computer hosting one or more websites may be the
+          server. The client submits an HTTP request message to the server. The server, which provides resources such as
+          HTML files and other content or performs other functions on behalf of the client, returns a response message
+          to the client. The response contains completion status information about the request and may also contain
+          requested content in its message body.
+
+          A web browser is an example of a user agent (UA). Other types of user agent include the indexing software used
+          by search providers (web crawlers), voice browsers, mobile apps, and other software that accesses, consumes,
+          or displays web content.
+
+        </p>
+        <img
+          src="https://tse4.mm.bing.net/th%2Fid%2FOIP.7NC5ArVuOraEL6a6EaL5MgHaC-%3Fpid%3DApi&f=1&ipt=b7336314ecf94dc86526d19a39d9ac043b7455dbb28da25ac7855222721a6022"
+          alt="" height="200px">
+      </div>
+    </div>
+
+    <div>
+      <h3 id="dynamic">Dynamic Web Pages</h3>
+      <div class="content">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Scheme_dynamic_page_en.svg/500px-Scheme_dynamic_page_en.svg.png"
+          alt="" height="200px">
+        <p>A dynamic web page is a web page constructed at runtime (during software execution), as opposed to a static
+          web page, delivered as it is stored.
+
+          A server-side dynamic web page is a web page whose construction is controlled by an application server
+          processing server-side scripts.[1] In server-side scripting, parameters determine how the assembly of every
+          new web page proceeds, and including the setting up of more client-side processing.
+
+          A client-side dynamic web page processes the web page using JavaScript running in the browser as it loads.
+          JavaScript can interact with the page via Document Object Model (DOM), to query page state and modify it. Even
+          though a web page can be dynamic on the client-side, it can still be hosted on a static hosting service such
+          as GitHub Pages or Amazon S3 as long as there is not any server-side code included.
+
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3 id="server">Application Servers</h3>
+      <div class="content">
+        <p>Application Server An application server is a server that hosts applications or software that delivers a
+          business application through a communication protocol. For a typical web application, the application server
+          sits behind the web servers. An application server framework is a service layer model. It includes software
+          components available to a software developer through an application programming interface. An application
+          server may have features such as clustering, fail-over, and load-balancing. The goal is for developers to
+          focus on the business logic. Wikipedia
+        </p>
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgeekflare.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fapplication-server-location.png&f=1&nofb=1&ipt=99fd1231902eed588705d9de65741f4354422f470fbf9da7dff9112ff52d7259"
+          alt="" height="200px">
+      </div>
+    </div>
+
+    <div>
+      <h3 id="security">Web Security</h3>
+      <div class="content">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcwatch.comodo.com%2Fblog%2Fwp-content%2Fuploads%2F2020%2F05%2Fgood-website-security-plan.jpg&f=1&nofb=1&ipt=7dd5e4ef259d4f860230f3a040f5a5b36fea9b3e85902642817b3cf4f57bcf29"
+          alt="" height="200px">
+        <p>Web security encompasses a range of solutions and security policies that organizations rely on to protect
+          their networks, users and assets from various security risks.
+
+          For enterprises, web security is critical to preventing costly cyberattacks—such as malware, phishing,
+          distributed denial-of-service (DDoS) attacks and more—that can disrupt core business practices and cause
+          catastrophic reputational damage.
+
+          The number of ways cybercriminals can gain unauthorized access to an organization’s data and
+          resources—vulnerabilities known as ‘attack surfaces’—has increased exponentially. When applied effectively,
+          web security safeguards the web applications businesses depend on from a wide range of malicious activities.
+          These activities range from simple malware and phishing attempts that result in data theft to complex
+          cyberattacks that target millions of users and can shut down business operations for days.
+
+        </p>
+      </div>
+    </div>
+
+    <submit><a href="#top">Go to top</a></submit>
+
+  </div>
+
+
+</body>
+
+</html>
