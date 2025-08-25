@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frameset</title>
+  <style>
+    div {
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 20px);
+      align-items: space-around;
+      padding: 10px;
+      margin: 0;
+      gap: 10px;
+    }
+
+    iframe {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <iframe src="frame1.html" width="50%"></iframe>
+    <iframe src="" name="right" width="50%"></iframe>
+  </div>
+</body>
+
+</html>

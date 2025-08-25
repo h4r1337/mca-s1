@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      border-collapse: collapse;
+    }
+
+    table,
+    select,
+    input,
+    label {
+      font-size: 1.3rem;
+    }
+
+    input[type=tel] {
+      width: 97%
+    }
+  </style>
+</head>
+
+<body>
+  <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+    <h1><u>WELCOME TO FRESHERS WORLD!!!</u></h1>
+  </marquee>
+  <form action="">
+    <table border="1" align="center" width="50%">
+      <tr>
+        <th colspan="2">REGISTRATION FORM</th>
+      </tr>
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age</label></td>
+        <td>
+          <select name="age" id="age">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td><input type="password" id="password"></td>
+      </tr>
+      <tr>
+        <td><label for="password2">Re-enter Password</label></td>
+        <td><input type="password" id="password2"></td>
+      </tr>
+      <tr>
+        <td rowspan="4">Select your security question</td>
+        <td><input type="radio" id="pet" name="security" value="pet"><label for="pet">What is your pet name?</label>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="friend" name="security" value="friend"><label for="friend">Who is your best
+            friend?</label>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="color" value="color" name="security"><label for="color">What is your favourite
+            color?</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="teacher" value="teacher" name="security"><label for="teacher">Who is your favourite
+            teacher?</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="securityAnswer">Answer for security question</label></td>
+        <td><input type="text" id="securityAnswer"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email id</label></td>
+        <td><input type="email" id="email"></td>
+      </tr>
+      <tr>
+        <td>Languages Known</td>
+        <td>
+          <input type="checkbox" id="malayalam" value="malayalam">
+          <label for="malayalam">Malayalam</label>
+
+          <input type="checkbox" id="english" value="english">
+          <label for="english">English</label>
+
+          <input type="checkbox" id="hindi" value="hindi">
+          <label for="hindi">Hindi</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Phone Number</td>
+        <td>
+          <table width="100%">
+            <tr>
+              <th>Home</th>
+              <th>Office</th>
+            </tr>
+            <tr>
+              <td><input type="tel" id="home" size="10"></td>
+              <td><input type="tel" id="office" size="10"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Upload CV</td>
+        <td><input type="file" id="file"></td>
+      </tr>
+      <tr>
+        <td align="center"><input type="reset" value="Reset"></td>
+        <td align="center"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
