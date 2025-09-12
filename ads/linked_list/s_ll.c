@@ -104,7 +104,7 @@ void delete_start(struct Node *head) {
 void delete_end(struct Node *head) {
   struct Node *temp = head;
 
-  if (temp) {
+  if (temp->next) {
     while (temp->next->next) {
       temp = temp->next;
     }
