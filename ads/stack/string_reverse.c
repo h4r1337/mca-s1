@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 #define MAX_LEN 500
 char stack[MAX_LEN];
